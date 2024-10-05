@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Before - Accessible University Demo Site - Inaccessible Version</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <link href="styles/bootstrap.min.css" rel="stylesheet">
 	<link href="styles/before-main.css" rel="stylesheet">
 	<link href="styles/before-menu.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 	<link href="styles/before-form.css" rel="stylesheet">
 	<link href="styles/before-modal.css" rel="stylesheet">
 	<link href="styles/before-hero.css" rel="stylesheet">
-  <!-- <script src="scripts/bootstrap.bundle.min.js"></script> -->
+  <script src="scripts/bootstrap.bundle.min.js"></script>
 	<script src="scripts/before-menu.js"></script>
 	<script src="scripts/before-form.js"></script>
 	<script src="scripts/before-modal.js"></script>
@@ -30,7 +30,7 @@
         </ul>
       </nav>
       <a href="/">
-        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
+        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block" alt="Accessible University logo"/>
       </a>
     </div>
 
@@ -46,11 +46,10 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
-                  About
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" tabindex="0">
+                About
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" role="menu">
                 <li><a class="dropdown-item" href="#">News</a></li>
                 <li><a class="dropdown-item" href="#">Governance</a></li>
                 <li><a class="dropdown-item" href="#">Diversity</a></li>
@@ -58,11 +57,10 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
-                  Academics
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" tabindex="0">
+                Academics
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" role="menu">
                 <li><a class="dropdown-item" href="#">Degree Programs</a></li>
                 <li><a class="dropdown-item" href="#">AU Faculty</a></li>
                 <li><a class="dropdown-item" href="#">Distance Learning</a></li>
@@ -70,21 +68,18 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
-                  Admissions
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" tabindex="0">
+                Admissions
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" role="menu">
                 <li><a class="dropdown-item" href="#">Undergraduate</a></li>
                 <li><a class="dropdown-item" href="#">Graduate</a></li>
                 <li><a class="dropdown-item" href="#">Tuition</a></li>
                 <li><a class="dropdown-item" href="#">Financial Aid</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">
-                  Visitors
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="0">Visitors</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -105,24 +100,24 @@
                 <div>
                   <div class="slide">
                     <a href="somepage.html?ref=Slide%201">
-                      <img src="images/8675309-before_brass_band.jpg" />
+                      <img src="images/8675309-before_brass_band.jpg" alt="A brass band performing at an event" />
                     </a>
                   </div>
                   <div class="slide">
                     <a href="somepage.html?ref=Slide%202">
-                      <img src="images/8675309-before_articulated_bus.jpg" />
+                      <img src="images/8675309-before_articulated_bus.jpg" alt="An articulated bus in transit" />
                     </a>
                   </div>
                   <div class="slide">
                     <a href="somepage.html?ref=Slide%203">
-                      <img src="images/8675309-before_construction.jpg" />
+                      <img src="images/8675309-before_construction.jpg" alt="A construction site under progress" />
                     </a>
                   </div>
                 </div>
               </div>
 
               <div class="section">
-                <div class="heading">Welcome!</div>
+                <h1 class="heading">Welcome!</h1>
                 <p>Accessible University (AU) is a <a href="https://www.merriam-webster.com/dictionary/fictional">fictional</a> <a href="https://en.wikipedia.org/wiki/University">university</a>, and this is its
                   fictional home page. This page is designed to demonstrate a variety of
                   common web design <a href="https://www.merriam-webster.com/dictionary/problems">problems</a> that result in visitors with disabilities
@@ -133,7 +128,7 @@
                 </p>
               </div>
 
-              <div class="heading">Bienvenido!</div>
+              <h1 class="heading">Bienvenido!</h1>
               <p>Accesible Universidad (UA) es una universidad ficticia, y esta es su
                 página de ficción. Esta página está diseñada para demostrar una variedad de
                 común de diseño web que se traducen en problemas de los visitantes con discapacidad
@@ -143,14 +138,14 @@
                 el diseño inaccesible de esta página envía el mensaje opuesto.
               </p>
 
-              <div class="heading">Can you spot the barriers?</div>
+              <h1 class="heading">Can you spot the barriers?</h1>
               <p><img style="float:left;max-width:200px;margin-right:10px" src="images/8675309-block.jpg"/> There are at least 18 accessibility issues on this page.
                 To see a list of all known issues, <a href="issues.html">click here</a>.
                 To see a more accessible version of this same page, <a href="after_u.html">click here</a>.
                 To view a popup list of accessibility issues:</p>
                 <a class="btn btn-primary" href="cheatsheet.html">click here</a>
 
-              <div class="heading">AU Enrollment Trends</div>
+              <h1 class="heading">AU Enrollment Trends</h1>
               <table id="enrollment" class="table">
                 <tr>
                   <td style="width:6em">&nbsp;</td>
@@ -227,12 +222,14 @@
                 <div class="heading">Events</div>
 
                 <h6>December 1</h6>
-                <h5><a href="#">A great holiday event</a></h4>
+                <h5><a href="#" class="event-link">A great holiday event</a></h5>
 
                 <p>Don't miss this event.</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
+
                 <h6>December 31</h6>
-                <h5><a href="#">New years eve party</a></h4>
+                <h5><a href="#" class="event-link">New year's eve party</a></h5>
+
                 <p>Ring in the new year with your friends</p>
                 <img class="hr" src="images/hr.png" alt="horizontal line graphic">
               </div>
@@ -240,40 +237,59 @@
               <div id="appForm" class="form-group box">
 
                 <div class="heading">Start your application</div>
-                  <p class="required reqExample">(required fields are in blue)</p>
+                <p class="required reqExample">(required fields are in blue)</p>
 
-                <form action="#" method="post">
-
-                  <!-- container for displaying form errors -->
-                  <div id="error"></div>
+                <form action="#" method="post" aria-labelledby="applicationForm" novalidate>
+                  <div id="error" aria-live="polite" role="alert"></div>
 
                   <div class="required form-group">
-                    Name:
-                    <input type="text" name="name" class="form-control" />
+                    <label for="name">Name: <span class="sr-only">(required)</span></label>
+                    <input type="text" name="name" id="name" class="form-control" aria-required="true" required />
                   </div>
+
                   <div class="required form-group">
-                    Email:
-                    <input type="text" name="email" class="form-control" />
+                    <label for="email">Email: <span class="sr-only">(required)</span></label>
+                    <input type="email" name="email" id="email" class="form-control" aria-required="true" required />
                   </div>
+
                   <div class="form-group">
-                    Country:
-                    <input type="text" name="country" class="form-control" />
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" class="form-control" />
                   </div>
+
                   <div class="form-group">
-                    <div>Desired major(s):</div>
-                    <div class="" id="majors">
-                      <div class="major"><input type="checkbox"/> Computer Science </div>
-                      <div class="major"><input type="checkbox"/> Engineering </div>
-                      <div class="major"><input type="checkbox"/> Economics </div>
-                      <div class="major"><input type="checkbox"/> Physics </div>
-                      <div class="major"><input type="checkbox"/> Psychology </div>
-                    </div>
+                    <fieldset>
+                      <legend>Desired major(s):</legend>
+                      <div id="majors">
+                        <div class="major">
+                          <input type="checkbox" id="major_cs" name="majors" value="cs" />
+                          <label for="major_cs">Computer Science</label>
+                        </div>
+                        <div class="major">
+                          <input type="checkbox" id="major_eng" name="majors" value="engineering" />
+                          <label for="major_eng">Engineering</label>
+                        </div>
+                        <div class="major">
+                          <input type="checkbox" id="major_econ" name="majors" value="economics" />
+                          <label for="major_econ">Economics</label>
+                        </div>
+                        <div class="major">
+                          <input type="checkbox" id="major_phy" name="majors" value="physics" />
+                          <label for="major_phy">Physics</label>
+                        </div>
+                        <div class="major">
+                          <input type="checkbox" id="major_psy" name="majors" value="psychology" />
+                          <label for="major_psy">Psychology</label>
+                        </div>
+                      </div>
+                    </fieldset>
                   </div>
+
                   <div id="captcha">
                     <p>Security Test</p>
                     <p>Please enter the two words you see below, separated by a space</p>
-                    <input type="text" name="captcha">
-                    <img src="images/captcha.png">
+                    <input type="text" name="captcha" aria-label="Captcha input field" />
+                    <img src="images/captcha.png" alt="Captcha image for security validation" />
                   </div>
 
                   <div class="mt-2">
@@ -345,7 +361,7 @@
       <li>Missing accessible table markup</li>
       <li>HTML fails validation</li>
     </ol>
-    <button class="btn btn-primary" type="button" id="modalOkButton">OK</button>
+    <button class="btn btn-primary" type="button" id="modalOkButton" aria-label="Ok">OK</button>
   </div>
 
   <div id="footer" role="bottom" aria-foo="yes"><span>.</div>
